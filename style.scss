@@ -65,6 +65,7 @@ select {
 
     header {
       position: fixed;
+      z-index: 2;
       top: 0;
       font-family: "Montserrat", sans-serif;
       display: flex;
