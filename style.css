@@ -47,4 +47,140 @@ select {
 }
 
 /* End of css reset */
+:root {
+  --primary: #f8f7f3;
+  --secondary: #1a24fb;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Overpass", sans-serif;
+}
+
+* body {
+  background-color: var(--primary);
+}
+
+* body header {
+  position: fixed;
+  top: 0;
+  font-family: "Montserrat", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 40px;
+  background-color: var(--secondary);
+}
+
+* body header .logo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+* body header .material-icons-outlined {
+  color: white;
+  font-size: 24px;
+}
+
+* body section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 100px 20px;
+  max-width: 1280px;
+  color: var(--secondary);
+  margin-top: 100px;
+}
+
+* body section article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 350px;
+  border: solid var(--secondary) 1px;
+  padding: 40px;
+}
+
+* body section article .index {
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+* body section article .title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+* body section article .sub {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+* body section article .text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+* body section article button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 18px;
+  font-size: 14px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+* body section article .material-icons-outlined {
+  font-size: 18px;
+}
+
+* body section article button:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
 /*# sourceMappingURL=style.css.map */
